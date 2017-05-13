@@ -18,15 +18,6 @@ public:
         int lenA = (len1 < len2)?len1:len2;
         int lenB = (len1 >= len2)?len1:len2;
         
-        // special case: len(A) = len(B) -> may cause empty A1/A2/B1/B2
-        //if(lenA == lenB)
-        //{
-        //    if(A[0] >= B[lenB - 1])
-        //        return (A[0] + B[lenB - 1]) / 2.0;
-        //    else if(B[0] >= A[lenB - 1])
-        //        return (B[0] + A[lenA - 1]) / 2.0;
-        //}
-        
         bool isEven = (lenA + lenB) % 2 == 0;
         
         // A binary search
