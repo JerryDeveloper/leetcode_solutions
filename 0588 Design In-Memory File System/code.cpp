@@ -99,11 +99,6 @@ public:
         
         return cur->content;
     }
-    
-    ~FileSystem()
-    {
-        delete root;
-    }
 };
 
 /**
