@@ -2,18 +2,18 @@ inorder: left -> root -> right
 
 a stack: store roots whose left tree are been traversed, and itself and right tree will be traversed in future.
 
-push top node to stack
-while stack is not empty:
-	pop out a node
-	if the node has left tree and has not been traversed: 
-		push it back to stack
-		push left child to stack
-		continue
-		
-	print the node
-	mark the node as been traversed
-	if the node has right tree:
-		push right child to stack
+	push top node to stack
+	while stack is not empty:
+		pop out a node
+		if the node has left tree and has not been traversed: 
+			push it back to stack
+			push left child to stack
+			continue
+			
+		print the node
+		mark the node as been traversed
+		if the node has right tree:
+			push right child to stack
 		
 		
 		
